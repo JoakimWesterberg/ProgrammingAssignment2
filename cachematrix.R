@@ -43,7 +43,7 @@ cacheSolve <- function(x, ...) {
         return(m)
     }
     
-    message("nothing in cache, calculating mean")
+    message("nothing in cache, calculating inverse")
     data <- x$get()
     m <- solve(data, ...)
     x$setInverse(m)
